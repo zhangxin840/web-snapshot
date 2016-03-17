@@ -1,6 +1,6 @@
 {
   "name": "web-snapshot",
-  "version": "0.1.5",
+  "version": "0.1.0",
   "description": "Take snapshot of web page",
   "main": "index.js",
   "scripts": {
