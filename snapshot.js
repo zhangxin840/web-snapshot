@@ -10,18 +10,18 @@ var take = function (url) {
 
     console.log('run', url, options);
 
-    var child = shellRunner.run(url, options);
+    var wkhtmltoimage = shellRunner.run(url, options);
 
-    child.stdout.on('data', function (data){
-      console.log('stdout:', data);
+    wkhtmltoimage.stdout.on('data', (data) => {
+      console.log(`stdout: ${data}`);
     });
 
-    child.stderr.on('data', function (data) {
-      console.log('stderr:', data);
+    wkhtmltoimage.stderr.on('data', (data) => {
+      console.log(`stderr: ${data}`);
     });
 
-    child.on('close', function (code) {
-      console.log('child process exited with code:', code);
+    wkhtmltoimage.on('close', (code) => {
+      console.log(`child process exited with code ${code}`);
     });
 
     return child;

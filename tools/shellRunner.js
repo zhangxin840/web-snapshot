@@ -18,7 +18,7 @@ function ShellRunner() {
 		var output = options.output;
 		delete options.output;
 
-		var args = [this.command, '--quiet'];
+		var args = [this.command];
 		for (var key in options) {
 			var val = options[key];
 			key = key.length === 1 ? '-' + key : '--' + key.replace(/\W+/g, '-').replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase();
@@ -36,7 +36,7 @@ function ShellRunner() {
 		}
 
 		var isUrl = /^(https?|file):\/\//.test(input);
-		
+
 		args.push(isUrl ? '"' + input + '"' : '-'); // stdin if HTML given directly
 		args.push(output || '-');       // stdout if no output file
 
