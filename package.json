@@ -19,9 +19,7 @@
     "url": "https://github.com/zhangxin840/web-snapshot.git"
   },
   "keywords": [
-    "snapshot",
-    "heroku",
-    "express"
+    "snapshot"
   ],
   "license": "MIT"
 }
