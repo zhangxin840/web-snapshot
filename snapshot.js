@@ -1,6 +1,5 @@
 var utils = require('./tools/utils')
-var shellRunner = require('./tools/shellRunner').setCommand(__dirname +
-    '/bin/wkhtmltoimage');
+var shellRunner = require('./tools/shellRunner').setCommand('wkhtmltoimage');
 var imagesPath = 'public/snapshots/';
 
 var take = function (url) {
