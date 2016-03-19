@@ -1,6 +1,6 @@
 source ./configs.sh
 
-if which wkhtmltox >/dev/null; then
+if which wkhtmltoimage >/dev/null; then
     echo 'wkhtmltox exists'
 else
     echo 'wkhtmltox does not exist'
