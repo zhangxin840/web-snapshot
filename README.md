@@ -12,4 +12,15 @@
 
 ## Usage
 
-- /update: Take a new snapshot 
+- /update?url=: Take a new snapshot
+- /show?url=: Get the latest snapshot of a url
+
+## Deploy on Heroku
+
+- Add the buildpack: heroku buildpacks:add https://github.com/homelight/wkhtmltox-buildpack.git
+- Redeploy app: git push heroku master
+
+## Deploy on IaaS
+
+- Upload tools/deploy to server
+- sh deploy.sh
