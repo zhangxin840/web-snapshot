@@ -1,3 +1,4 @@
+#!/bin/bash
 source ./configs.sh
 
 if which wkhtmltoimage >/dev/null; then

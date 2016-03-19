@@ -23,4 +23,4 @@
 ## Deploy on IaaS
 
 - Upload tools/deploy to server
-- sh deploy.sh
+- sudo bash deploy.sh

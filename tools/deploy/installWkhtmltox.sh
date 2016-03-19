@@ -1,3 +1,4 @@
+#!/bin/bash
 source ./configs.sh
 
 echo 'Installing wkhtmltox'

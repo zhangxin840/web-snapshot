@@ -1,5 +1,6 @@
+#!/bin/bash
 source ./configs.sh
 
-sh ./prepareEnv.sh
-sh ./updateCode.sh
-sh ./startApp.sh
+bash ./prepareEnv.sh
+bash ./updateCode.sh
+bash ./startApp.sh
